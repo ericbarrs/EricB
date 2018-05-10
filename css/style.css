@@ -151,13 +151,42 @@ p{
 }
 
 @media(max-width:568px){
+
+  .navBar li{
+    float: left;
+    clear: both;
+  }
   .jpg1 , .jpg2 , .jpg3 , .jpg4 {
     background-attachment: scroll;
   }
   .logo{
-    float: none;
+    float: left;
+    margin-right: 50px;
   }
-  .navBar li{
-    float: none;
+
+.borderLogo:hover{
+  border: 5px ridge orange;
+  transform: rotate(-45deg);
+}
+.border {
+  border: 2px ridge #888;
+  padding: 5px;
+  font-size: .7em;
+
+}
+  .navBar li a{
+    font-size: 1em;
+    line-height: 15px;
+    margin-top: 10px;
+    padding: 10px 0 0 0;
+  }
+  .navBar li a:hover {
+  color: orange;
+  transform: rotate(-10deg);
+  }
+
+  .jpg1{
+    background-position: 80%;
+    margin-top: 150px;
   }
 }
