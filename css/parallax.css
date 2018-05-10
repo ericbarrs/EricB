@@ -8,9 +8,74 @@ html , body {
   color: #666;
 
 }
-.jpg1 , .jpg2 , .jpg3{
+ .navBar{
+  font-family: 'Finger Paint', cursive;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #040404;
+}
+ .navBar ul{
+  list-style-type: none;
+}
+
+.navBar li{
+  float: right;
+}
+.navBar li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    margin-bottom: 20px;
+    color: #ddd;
+    font-weight: 400;
+    font-size: 25px;
+    transition: 2s
+}
+.navBar li a:hover {
+color: green;
+transform: rotate(10deg);
+transition: 2s;
+}
+.logo span{
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px #666;
+}
+.logo .borderLogo{
+  transition: 2s;
+  border: 5px solid white;
+  padding: 25px 25px;
+  position: absolute;
+  top: 20px;
+  left: 47px;
+}
+.borderLogo:hover{
+  border: 5px ridge green;
+  transform: rotate(45deg);
+  transition: 2s;
+}
+
+.logo{
+  float: left;
+  margin: 20px;
+  padding: 0;
+}
+
+.highLights{
+  text-shadow: 1px 1px black;
+  font-style: italic;
+  font-family: 'Finger Paint', cursive;
+}
+.jpg1 , .jpg2 , .jpg3 , .jpg4{
   position: relative;
-  opacity: 0.90;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,16 +88,20 @@ html , body {
 
 }
 .jpg1{
-  background-image:url('../img/jpg1.jpeg');
+  background-image:url('../img/jpg4.jpg');
   min-height: 100%;
 
 }
 .jpg2{
-  background-image:url('../img/jpg2.jpg');
+  background-image:url('../img/jpg1.jpeg');
   min-height: 700px;
 }
 .jpg3{
   background-image:url('../img/jpg3.jpg');
+  min-height: 700px;
+}
+.jpg4{
+  background-image:url('../img/jpg2.jpg');
   min-height: 700px;
 }
 
@@ -43,36 +112,50 @@ html , body {
 
 .section-light{
   background-color: #d4d4d4;
-  color: #666;
+  color: #999;
 }
 
 .section-dark{
   background-color: #282e34;
   color: #ddd;
 }
-
+.section > div {
+  text-align: left;
+}
+.section > div h2{
+text-align: center; 
+}
 .ptext{
   position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
   font-size: 37px;
-  color: #000;
+  color: #888;
+  text-shadow: 1px 1px 1px black;
 }
 
 .ptext .border{
-  background-color: #111;
-  color: #fff;
   padding: 20px;
+  border: 10px ridge #888;
+  border-
 }
 
 .ptext .border.trans{
   background-color: transparent;
-  color: #000;
+}
+p{
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-bottom: 1.2em;
 }
 
 @media(max-width:568px){
-  .jpg1 .jpg2 .jpg3 {
+  .jpg1 .jpg2 .jpg3 .jpg4 {
     background-attachment: scroll;
+  }
+
+  .navBar li{
+    float: none;
   }
 }
