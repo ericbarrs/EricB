@@ -123,7 +123,7 @@ transition: 2s;
   text-align: left;
 }
 .section > div h2{
-text-align: center; 
+text-align: center;
 }
 .ptext{
   position: absolute;
@@ -151,10 +151,12 @@ p{
 }
 
 @media(max-width:568px){
-  .jpg1 .jpg2 .jpg3 .jpg4 {
+  .jpg1 , .jpg2 , .jpg3 , .jpg4 {
     background-attachment: scroll;
   }
-
+  .logo{
+    float: none;
+  }
   .navBar li{
     float: none;
   }
