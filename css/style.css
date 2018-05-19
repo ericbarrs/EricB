@@ -60,7 +60,7 @@ transition: 2s;
 }
 .logo:hover{
   border: 5px ridge green;
-  transform: rotate(15deg);
+  transform: rotate(375deg);
   transition: 2s;
 }
 
