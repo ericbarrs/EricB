@@ -51,9 +51,6 @@ transition: 2s;
   padding: 10px 10px;
   text-shadow: 2px 2px #666;
 }
-.logo span:hover{
-  transform: none;
-}
 .logo{
   transition: 2s;
   border: 5px solid white;
@@ -63,7 +60,7 @@ transition: 2s;
 }
 .logo:hover{
   border: 5px ridge green;
-  transform: rotate(45deg);
+  transform: rotate(15deg);
   transition: 2s;
 }
 
@@ -93,6 +90,7 @@ transition: 2s;
 .jpg1{
   background-image:url('../img/jpg4.jpg');
   min-height: 100%;
+  padding-top: 110px;
 
 }
 .jpg2{
